@@ -6,6 +6,8 @@ interface SideBarProps {
     weight: number;
     color: string;
     setColor: (color: string) => void;
+    remove?: boolean;
+    setRemove: (remove: boolean) => void;
 }
 
 const SideBar = (props: SideBarProps) => {
@@ -19,6 +21,7 @@ const SideBar = (props: SideBarProps) => {
                     props.setWeight(+e.target.value)
                 }}/>
             </div>
+            <div className={styles.remove} onClick={() => props.setRemove(true)}>Clear</div>
         </div>
     );
 };

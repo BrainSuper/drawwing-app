@@ -54,3 +54,10 @@ input[type=color]::-moz-color-swatch {
     font-size: 15px;
     font-family: "Microsoft Sans Serif";
 }
+.remove {
+    width: 75%;
+    padding: 10px;
+    background-color: white;
+    font-size: 30px;
+    margin-top: 200px;
+}
